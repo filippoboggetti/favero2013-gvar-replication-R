@@ -5,9 +5,7 @@
 ### DESCRIPTION:  This script replicates Favero (2013).
 ###
 ### OUTPUT:       Table folder: replicates Table 1 and 2 in pdf. Please ensure 
-###               TinyTex (or equivalent) is installed or you are willing to  
-###               install it (the code will check existence and otherwise install)
-###               Otherwise Run Safe_Replication.
+###               pdflatex is on the PATH (the table scripts call it directly).
 ###
 ###               Dataset: Dataset.rds The main Dataset used in the paper.
 ###
@@ -82,8 +80,8 @@ source("R_scripts/Table_2.R")
 
 source("R_scripts/Figure_6.R")
 
-#Replicate Fig.7 (O.O.S.) for the traditional model. This code is deprecated please
-#see the Eviews one in "Eviews_graphs". Due to the lack of a P^2 algorithm in R the model 
+#Replicate Fig.7 (O.O.S.) for the traditional model. This code is deprecated; the
+#EViews version used in the project is not included here. Due to the lack of a P^2 algorithm in R the model 
 #is dynamically computed (iterated) and no bootstrapping is applied. To see how to bootstrap
 #in R please see the construction of the GIRFs. 
 
@@ -91,8 +89,7 @@ source("R_scripts/Figure_6.R")
 
 
 
-#This code is deprecated please
-#see the Eviews one in "Eviews_graphs". Due to the lack of a P^2 algorithm in R the model 
+#This code is deprecated; the EViews version used in the project is not included here. Due to the lack of a P^2 algorithm in R the model 
 #is dynamically computed (iterated) and no bootstrapping is applied. To see how to bootstrap
 #in R please see the construction of the GIRFs. 
 
@@ -102,18 +99,17 @@ source("R_scripts/GVAR_forecasting.R")
 
 source("R_scripts/Fig8_a.R")
 
-#Replicate the GIRFs: For an accurate replication see the "GIRFs" folder in which 
-#it is possible to find and Eviews file. The code here is inefficient and is solved
+#Replicate the GIRFs: in the project this was done in EViews (not included here). The code here is inefficient and is solved
 #by hand. Bootstrapping is applied to compute the confidence bands for the IRFs. 
 #Results are comparable with the image provided by Eviews but the necessity of 
 #estimating the systemfit multiple times and the fact the the model has to be iterated
 #rather then solved makes this code deprecated. The code is left uncommentated, refer 
-#to the Eviews one. An frozen image is still provided in "plots". Please also note
+#to the EViews version (not included). Please also note
 #that for graphical purposes replications are set at 5000, if there is the necessity 
 #of running this part f code for illustrative reasons, please change the number of 
 #replications. 
 
-#source("R_scipts/GIRF.R")
+# source("R_scripts/GIRF.R")   # legacy, not part of the default pipeline (see README)
 
 ## -----------------------------------------------------------------------------
 
