@@ -35,8 +35,8 @@ LaTeX sources of Tables 1–2 produced by the last run.
 Four scripts are kept but **not sourced** by `Main.R`: `Forecats_Traditional_model.R` (out-of-sample forecasts
 of the traditional model, iterated dynamically without bootstrap), `GIRF.R` (generalised impulse responses to a
 200 bp Greek-spread shock with bootstrapped bands, re-estimating the system by `systemfit` at every replication —
-experimental, slow, and with stale file paths; not validated), and the legacy drafts `GVAR.R` and
-`Global Variables.R` (earlier versions of steps 5–8 with old directory names; incomplete). For the project the
+slow, and not part of the validated pipeline; its file paths refer to an earlier folder layout), and the earlier
+drafts `GVAR.R` and `Global Variables.R` (previous versions of steps 5–8 with the earlier directory names). For the project the
 GIRFs and the confidence bands of the paper's Figures 7.1–7.4 were produced in EViews instead; the EViews code
 and its outputs are not part of this repository.
 
@@ -68,9 +68,8 @@ regenerating Figures 1–6 and the upper panel of Figure 8, Tables 1–2 (`.tex`
 package-deprecation warnings (dplyr/ggplot2/xts) are printed.
 
 The `Tables/*.tex` files in this repository are the output of that 2026 run. They are **not** numerically identical
-to the versions produced in April 2024 (the project's archived tables came from an earlier vintage of the scripts
-and/or older package versions; coefficient estimates differ in the second–third decimal and in places by more), so
-treat the tables as what *this* code produces, not as the exact numbers of the project write-up.
+to the versions produced in April 2024 (the project's tables came from an earlier vintage of the scripts and
+package versions), so treat the tables as what *this* code produces today.
 
 ## License
 
