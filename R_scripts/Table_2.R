@@ -218,7 +218,7 @@ subFolder1 <- "Table2"
 subFolder2 <- " No Panel restrictions"
 nestedFolderPath <- file.path(baseFolder, subFolder1, subFolder2)
 
-texFileName <- "Table1nopanelrestriction.tex"
+texFileName <- "Table2nopanelrestriction.tex"
 fullFilePath <- file.path(nestedFolderPath, texFileName)
 
 if (!dir.exists(nestedFolderPath)) {

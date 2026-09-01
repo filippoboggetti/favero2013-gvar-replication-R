@@ -267,7 +267,7 @@ dataframes_to_merge <- list(cds_10Y, cds_5Y, d_ratings, EIB_10Y,
                             exchange_rates, swap_rates, trade_weights, 
                             Us_corporate_spread, yields)
 
-source("R_scripts/Safe_merge.R")
+source("R_scripts/safe_merge.R")
 
 for(df in dataframes_to_merge) {
   Dataset <- safe_merge_by_date(Dataset, df)
