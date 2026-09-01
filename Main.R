@@ -15,9 +15,10 @@
 ###               
 ### WARNING:      Please remember that to perform bootstrapping for the IRF computation
 ###               many iterations are needed. Hence un-commenting the GIRFs file
-###               will particularly slow down the execution. An Eviews file is pro-
-###               vided for a faster and more accurate replication of GIRFs and
-###               bootstrapping for confidence intervals (Fig 7.1-7.4).
+###               will particularly slow down the execution. In the original project
+###               an EViews file was used for a faster and more accurate replication
+###               of the GIRFs and bootstrapped bands (Fig 7.1-7.4); that EViews code
+###               and its outputs are NOT included in this repository.
 ################################################################################
 
 ## -----------------------------------------------------------------------------
