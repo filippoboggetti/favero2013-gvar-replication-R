@@ -60,8 +60,13 @@ checks of every intermediate dataset) and `Database.RDS/`.
 
 Written and last used in RStudio in Spring 2024 (R 4.3). **Re-run on 2026-09-01** from a clean copy with
 `Rscript Main.R` (R 4.3.2, macOS, `setwd` pointed at the folder): completes in about 15 s with exit status 0,
-regenerating Figures 1–6 and 8a, Tables 1–2 (`.tex` and PDF) and all intermediate datasets — 0 of the four Table 1–2 `.tex` files byte-identical to the ones in `Tables/` (the others differ only in formatting details). Only
+regenerating Figures 1–6 and 8a, Tables 1–2 (`.tex` and PDF) and all intermediate datasets. Only
 package-deprecation warnings (dplyr/ggplot2/xts) are printed.
+
+The `Tables/*.tex` files in this repository are the output of that 2026 run. They are **not** numerically identical
+to the versions produced in April 2024 (the project's archived tables came from an earlier vintage of the scripts
+and/or older package versions; coefficient estimates differ in the second–third decimal and in places by more), so
+treat the tables as what *this* code produces, not as the exact numbers of the project write-up.
 
 ## License
 
